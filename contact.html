@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2 style="text-align: center;"><b>Contact</b></h2>
+    <section id="connect" class="contact" style="display: flex; justify-content: center;">
+        <div class="icons" style=" align-items: center;">
+            <a href="mailto:prameshgurav79286@gmail.com"><img src="gmail.png" alt="Gmail"></a>
+            <a href="tel:+91 9372009131"><img src="Contact.png" alt="Contact"></a>
+            <a href="https://www.linkedin.com/in/pramesh-gurav-a269642b6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHm6jwT%2BcQdynsYrZP1%2F2Og%3D%3D" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/PrameshGurav0327"><img src="github.png" alt="github"></a>
+        </div>
+    </section>
+    
+    <section class="contact-form"> 
+        <form action="mailto:prameshgurav79286@gmail.com" method="post" enctype="text/plain">
+             <label for="name">Name:</label> 
+             <input type="text" id="name" name="name" required> 
+             <label for="email">Email:</label> 
+             <input type="email" id="email" name="email" required> 
+             <label for="message">Message:</label> 
+             <textarea id="message" name="message" rows="5" col="18" required></textarea> 
+             <button type="submit">Send Message</button> 
+
+             <div class="button">
+                <button type="button" id="back-to-home-page"><a href="home.html">Back to home page</a></button>
+            </div>
+            </form> 
+        </section>
+    <footer> 
+        <p>&copy; 2024 Pramesh Gurav. All rights reserved.</p> 
+    </footer>
+</body>
+</html>
