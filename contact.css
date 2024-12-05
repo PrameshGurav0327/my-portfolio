@@ -136,5 +136,10 @@ footer {
     .nav ul li{
         margin-bottom: 10px;
     }
+
+    .contact-form{
+        min-height: 400px;
+        min-width: 600px;
+    }
     
 }

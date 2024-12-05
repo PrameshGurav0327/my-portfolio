@@ -41,7 +41,7 @@ body{
 
 /* Section styling */
 
-#home {
+#index {
     text-align: center;
     padding: 50px 20px;
     background: linear-gradient(to bottom, #007bff, #6fbbd3);
@@ -52,7 +52,7 @@ body{
     color: #ffdd57;
 }
 
-#home img{
+#index img{
     margin-top: 20px;
     width: 150px;
     height:150px;
@@ -84,6 +84,10 @@ body{
 /* Responsive Design */
 
 @media (max-width: 768px){
+
+    body{
+        background: linear-gradient(to bottom, #007bff, #6fbbd3);
+    }
     .nav ul{
         flex-direction: column;
     }
@@ -92,11 +96,11 @@ body{
         margin-bottom: 10px;
     }
 
-    #home .description h1{
+    #index .description h1{
         font-size: 2rem;
     }
 
-    #home img{
+    #index img{
         width: 120px;
         height: 120px;
     }

@@ -123,13 +123,15 @@ body{
         margin-bottom: 10px;
     }
 
-    #projects h1{
+    #projects h3{
+        min-width: 500px;
         font-size: 2rem;
     }
 
-    #projects .card-body{
-        width: 600px;
-        height: 600px;
-        text-overflow: clip;
+    .card-body{
+        max-width: 100%;
+        /* overflow: hidden; */
+        /* overflow: break-word; */
+        word-break: break-word;
     }
 }
