@@ -128,10 +128,21 @@ body{
         font-size: 2rem;
     }
 
-    .card-body{
-        max-width: 100%;
+    .content{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 100%;
         /* overflow: hidden; */
         /* overflow: break-word; */
-        word-break: break-word;
+        margin:10px 0;
+    }
+
+    .button #next{
+        display: block;
+        margin: auto;
     }
 }
