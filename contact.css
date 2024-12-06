@@ -137,9 +137,12 @@ footer {
         margin-bottom: 10px;
     }
 
-    .contact-form{
-        min-height: 400px;
-        min-width: 600px;
+    footer{
+        display:inline;
+        justify-content: center;
+        background-color: #333;
+        max-width: 100%;
+        min-width: 5rem;
     }
     
 }
