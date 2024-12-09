@@ -78,6 +78,32 @@ body{
     margin: 5px 0;
 }
 
+/* Resume Download Button Style */
+
+.resume button{
+    text-decoration: rgb(255, 0, 72);
+    border-radius: 20px;
+}
+
+.resume button a{
+    display:inline-flex;
+    justify-content: center;
+    margin: 5px;
+    padding:10px;
+}
+
+.resume #resume:hover{
+    text-transform: capitalize;
+    background-color:brown;
+    /* margin: 5px; */
+    /* padding: 4px; */
+}
+
+
+.resume #resume{
+    background-color: coral;
+}
+
 
 /* Button Styling */
 .button{
