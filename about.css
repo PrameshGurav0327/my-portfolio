@@ -82,6 +82,7 @@ body{
 
 .resume button{
     text-decoration: rgb(255, 0, 72);
+    border-color: 2px solid #000000 ;
     border-radius: 20px;
 }
 
@@ -94,7 +95,7 @@ body{
 
 .resume #resume:hover{
     text-transform: capitalize;
-    background-color:brown;
+    background-color: rgb(204, 201, 40);
     /* margin: 5px; */
     /* padding: 4px; */
 }
