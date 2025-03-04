@@ -159,34 +159,45 @@ body {
 }
 
 /* Navigation bar */
-.nav {
+header {
     background-color: #333;
-    padding: 1rem 2rem;
+    color: #fff;
+    padding: 1rem 0;
 }
 
-.nav ul {
-    list-style: none;
+nav {
     display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.nav ul li {
-    margin: 0 15px;
-}
-
-.nav ul li a {
+.logo a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
-.nav ul li a:hover {
-    color: #ff4500;
-    text-decoration: underline;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff6347;
+}
+
 
 /* Section styling */
 .content {
