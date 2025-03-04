@@ -148,17 +148,20 @@
 }  */
 
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #ffffff;
-    color: #333;
-    line-height: 1.6;
 }
 
-/* Navigation bar */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header and Navbar */
 header {
     background-color: #333;
     color: #fff;
@@ -197,97 +200,3 @@ nav {
 .nav-links li a:hover {
     color: #ff6347;
 }
-
-
-/* Section styling */
-.content {
-    padding: 20px;
-    background: linear-gradient(to right, #007bff, #6fbbd3);
-    min-height: 100vh;
-    text-align: center;
-    color: white;
-}
-
-.content h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* Project Cards */
-.card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 600px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.card h3 {
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.card p {
-    color: #555;
-}
-
-/* Button Styling */
-.button {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.button #next {
-    background-color: #ffdd57;
-    color: #333;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.button #next a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.button #next:hover {
-    background-color: #50c0ec;
-    color: white;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }}
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .nav-links li {
-        width: 100%;
-    }
-
-    .nav-links li a {
-        display: block;
-        padding: 10px;
-        background-color: #444;
-        border-radius: 5px;
-        text-align: center;
-    }
