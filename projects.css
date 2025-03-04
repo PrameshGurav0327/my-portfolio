@@ -1,63 +1,61 @@
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #ffffff;
-    color:#333;
+    color: #333;
     line-height: 1.6;
 }
 
 /* Navigation bar */
-
-.nav{
-    background-color: #007bff;
-    padding: 1 rem 2rem;
+.nav {
+    background-color: #333;
+    padding: 1rem 2rem;
 }
 
-.nav ul{
-    list-style:none;
+.nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0; 
+    margin: 0;
     padding: 15px;
 }
 
-.nav ul li{
+.nav ul li {
     margin: 0 15px;
 }
 
-.nav ul li a{
-    color: #fff;
+.nav ul li a {
+    color: orangered;
     text-decoration: none;
-    font-size: 1.1 rem;
-    font-weight: bold;    
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
-.nav ul li a:hover{
+.nav ul li a:hover {
     color: #ffdd57;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 /* Section styling */
-
- .content{
+.content {
     padding: 20px;
-    background-color: linear-gradient(to right,  #007bff, #6fbbd3);
+    background: linear-gradient(to right, #007bff, #6fbbd3);
     min-height: 100vh;
- }
-
- .content h2{
     text-align: center;
-    color:#333;
+    color: white;
+}
+
+.content h2 {
     font-size: 2rem;
     margin-bottom: 20px;
- }
+}
 
- /* Project Cards */
-
-.card{
-    background:linear-gradient (to left #007bff, #ffffff);
+/* Project Cards */
+.card {
+    background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
@@ -65,84 +63,69 @@ body{
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: lightskyblue;
-    text-decoration-color: #ffffff;
 }
 
-.card:hover{
-    background:hsl(203, 87%, 57%);
+.card:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0 ,0 , 0, 0.2)
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.card h3{
+.card h3 {
     color: #007bff;
     margin-bottom: 10px;
 }
 
-.card p{
-    color:#555;
-}
-
-#projects {
-    text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(to bottom, #007bff, #6fbbd3);
-    color: white;
+.card p {
+    color: #555;
 }
 
 /* Button Styling */
-.button{
-    margin-bottom: 2px;
+.button {
     text-align: center;
+    margin-top: 20px;
 }
 
-.button #next{
+.button #next {
     background-color: #ffdd57;
     color: #333;
     border: none;
-    padding: 10px 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.button #next:hover{
+.button #next a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button #next:hover {
     background-color: #50c0ec;
-    color: rgb(24, 243, 239);
+    color: white;
 }
 
 /* Responsive Design */
-
-@media (max-width: 768px){
-    .nav ul{
+@media (max-width: 768px) {
+    .nav ul {
         flex-direction: column;
+        text-align: center;
+        padding: 10px;
     }
 
-    .nav ul li{
+    .nav ul li {
         margin-bottom: 10px;
     }
 
-    #projects h3{
-        min-width: 500px;
-        font-size: 2rem;
-    }
-
-    .content{
-        display:flex;
+    .content {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .card{
-        width: 100%;
-        overflow: hidden;
-        overflow: break-word;
-        margin:10px 0;
+    .card {
+        width: 90%;
     }
-
-    .button #next{
-        display: block;
-        margin: auto;
-    }
-} 
+}
