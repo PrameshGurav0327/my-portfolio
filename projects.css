@@ -253,7 +253,7 @@ body {
 
 .button #next:hover {
     background-color: #333;
-    color: white;
+    color: orangered;
 }
 
 /* Responsive Design */
