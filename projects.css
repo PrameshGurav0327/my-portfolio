@@ -252,7 +252,7 @@ body {
 }
 
 .button #next:hover {
-    background-color: #50c0ec;
+    background-color: #333;
     color: white;
 }
 
