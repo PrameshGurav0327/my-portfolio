@@ -42,10 +42,10 @@ body {
 /* Section styling */
 .content {
     padding: 20px;
-    background: linear-gradient(to right, #007bff, #6fbbd3);
+    background: #f9f9f9;
     min-height: 100vh;
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
 
 .content h2 {
