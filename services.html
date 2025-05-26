@@ -23,12 +23,22 @@
 
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
+            padding: 0 20px;
             height: 85px;
             background-color: rgb(93, 38, 112);
-            position: relative;
+            /* Original color preserved */
+            position: fixed;
+            /* Sticky nav */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            /* Optional: adds a subtle shadow */
         }
+
 
         /* Logo styling */
         nav .left span {
@@ -110,7 +120,7 @@
 
         .section-services {
             background-color: #f4f6f9;
-            padding: 50px 20px;
+            padding: 100px 20px 60px;
             text-align: center;
         }
 
@@ -228,14 +238,15 @@
         // navigation
 
         document.addEventListener("DOMContentLoaded", function () {
-        const nav = document.querySelector("nav");
+            const nav = document.querySelector("nav");
 
-        nav.addEventListener("click", function () {
-            if (window.innerWidth <= 768) {
-                nav.classList.toggle("show");
-            }
+            nav.addEventListener("click", function () {
+                if (window.innerWidth <= 768) {
+                    nav.classList.toggle("show");
+                }
+            });
         });
-    });
     </script>
 </body>
+
 </html>
