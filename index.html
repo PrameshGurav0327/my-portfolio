@@ -27,8 +27,17 @@
             align-items: center;
             height: 85px;
             background-color: rgb(93, 38, 112);
+            position: relative;
         }
 
+        /* Logo styling */
+        nav .left span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Menu items */
         nav ul {
             display: flex;
             justify-content: center;
@@ -36,14 +45,13 @@
         }
 
         nav ul li {
-            list-style: none;
             margin: 0 23px;
         }
 
         nav ul li a {
             text-decoration: none;
-            margin: 0 23px;
             color: white;
+            transition: all 0.3s ease;
         }
 
         nav ul li a:hover {
@@ -51,8 +59,43 @@
             font-size: 1.04rem;
         }
 
+        /* Hamburger icon */
+        nav::after {
+            content: '☰';
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            right: 30px;
+        }
+
+        /* Responsive menu */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(93, 38, 112);
+                position: absolute;
+                top: 85px;
+                right: 0;
+                width: 100%;
+                padding: 20px 0;
+                z-index: 1000;
+            }
+
+            nav.show ul {
+                display: flex;
+            }
+
+            nav::after {
+                display: block;
+            }
+        }
+
+
         .left {
-            color:white;
             font-size: 1.5rem;
         }
 
@@ -118,12 +161,13 @@
 
         /* footer */
 
-        footer{
+        footer {
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 85px;
             background-color: rgb(93, 38, 112);
+            color: white;
         }
     </style>
 </head>
@@ -132,7 +176,7 @@
     <!-- Header with Navbar -->
     <header>
         <nav>
-            <div class="left"><strong><span id="logo"></span></strong></div>
+            <div class="left"><strong><span id="logo"><-Developer G-></span></strong></div>
             <div class="right">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -155,7 +199,7 @@
             <div class="right-section">
                 <img src="img/profile_picture.png" alt="profile_picture">
             </div>
-            
+
         </section>
         <hr>
         <section class="section-second">
@@ -166,23 +210,24 @@
             </div>
         </section>
     </main>
-    <footer> 
-        <p>&copy; 2024 Pramesh Gurav. All rights reserved.</p> 
+    <footer>
+        <p>&copy; 2024 Pramesh Gurav. All rights reserved.</p>
     </footer>
 
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed('#element', {
-            strings: ['Full-Stack Developer'],
-            typeSpeed: 50,
-            loop: true
+        // navigation
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const nav = document.querySelector("nav");
+
+        nav.addEventListener("click", function () {
+            if (window.innerWidth <= 768) {
+                nav.classList.toggle("show");
+            }
         });
-        var typed = new Typed('#logo', {
-            strings: ['Pramesh Gurav'],
-            typeSpeed: 100,
-            loop: true
-        });
+    });
     </script>
 </body>
 
