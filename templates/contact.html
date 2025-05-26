@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pramesh - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+            background-color: rgb(93, 38, 112);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            margin: 0 23px;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: #eb6eebf5;
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        /* Section First */
+
+
+        .section-first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+            color: black;
+        }
+
+        .card {
+            max-width: 700px;
+            margin: 60px auto;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            min-height: 500px;
+            /* Keeps card from shrinking */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card-body {
+            padding: 60px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-body form {
+            width: 100%;
+        }
+
+        .text-center h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form-label {
+            font-weight: 600;
+        }
+
+        .form-control {
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s ease;
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .form-text {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+
+        /* footer */
+
+        footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+            background-color: rgb(93, 38, 112);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Navbar -->
+    <header>
+        <nav>
+            <div class="left"><strong><span id="logo"></span></strong></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/templates/about.html">About</a></li>
+                    <li><a href="/templates/services.html">Services</a></li>
+                    <li><a href="/templates/projects.html">Projects</a></li>
+                    <li><a href="/templates/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="section-first">
+            <div class="card">
+                <div class="card-body">
+                    <!-- Heading -->
+                    <div class="text-center mb-5 mb-md-9">
+                        <h2>Contact Me</h2>
+                        <p>Whether you have questions or you would just like to say hello, connect to me.</p>
+                    </div>
+                    <!-- End Heading -->
+
+                    <!-- Form -->
+                    <form action="mailto:prameshgurav79286@gmail.com" method="post" enctype="text/plain">
+                        <div class="row gx-3">
+                            <div class="col-sm-6">
+                                <!-- Form -->
+                                <div class="mb-3">
+                                    <label class="form-label" for="FirstName">First name</label>
+                                    <input type="text" class="form-control form-control-lg"
+                                        name="FirstName" id="FirstName" placeholder="First name"
+                                        aria-label="First name">
+                                </div>
+                                <!-- End Form -->
+                            </div>
+                            <!-- End Col -->
+
+                            <div class="col-sm-6">
+                                <!-- Form -->
+                                <div class="mb-3">
+                                    <label class="form-label" for="Your-First-Name">First name</label>
+                                    <input type="text" class="form-control form-control-lg"
+                                        name="LastName" id="LasttName" placeholder="Last name"
+                                        aria-label="Last name">
+                                </div>
+                                <!-- End Form -->
+                            </div>
+                            <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+
+                        <div class="row gx-3">
+                            <div class="col-sm-6">
+                                <!-- Form -->
+                                <div class="mb-3">
+                                    <label class="form-label" for="hireUsFormWorkEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-lg"
+                                        name="hireUsFormNameWorkEmail" id="hireUsFormWorkEmail"
+                                        placeholder="email@site.com" aria-label="email@site.com">
+                                </div>
+                                <!-- End Form -->
+                            </div>
+                            <!-- End Col -->
+
+                            <div class="col-sm-6">
+                                <!-- Form -->
+                                <div class="mb-3">
+                                    <label class="form-label" for="hireUsFormPhone">Phone <span
+                                            class="form-label-secondary">(Optional)</span></label>
+                                    <input type="text" class="form-control form-control-lg" name="hireUsFormNamePhone"
+                                        id="hireUsFormPhone" placeholder="+x(xxx)xxx-xx-xx"
+                                        aria-label="+x(xxx)xxx-xx-xx">
+                                </div>
+                                <!-- End Form -->
+                            </div>
+                            <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+
+                        <!-- Form -->
+                        <div class="mb-3">
+                            <label class="form-label" for="hireUsFormDetails">Message</label>
+                            <textarea class="form-control form-control-lg" name="hireUsFormNameDetails"
+                                id="hireUsFormDetails" placeholder="type your messege ..."
+                                aria-label="Tell us about your ..." rows="4"></textarea>
+                        </div>
+                        <!-- End Form -->
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Send Mail</button>
+                        </div>
+                    </form>
+                    <!-- End Form -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pramesh Gurav. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#logo', {
+            strings: ['Pramesh Gurav'],
+            typeSpeed: 100,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

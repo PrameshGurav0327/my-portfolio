@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pramesh - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(61, 45, 74);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+            background-color: rgb(93, 38, 112);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            margin: 0 23px;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: #eb6eebf5;
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        /* Section First */
+
+        main hr {
+            border: 0;
+            background: #ffffff;
+            height: 1.4px;
+            margin: 40px 84px;
+        }
+
+
+        .section-services {
+            background-color: #f4f6f9;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section-services .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .service-card h3 {
+            color: #5a2d82;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .service-card p {
+            color: #333;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+
+        /* footer */
+
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+            background-color: rgb(93, 38, 112);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Navbar -->
+    <header>
+        <nav>
+            <div class="left"><strong><span id="logo"></span></strong></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/templates/about.html">About</a></li>
+                    <li><a href="/templates/services.html">Services</a></li>
+                    <li><a href="/templates/projects.html">Projects</a></li>
+                    <li><a href="/templates/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="section-services">
+            <h2 class="section-title">Services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <h3>Custom Web Development</h3>
+                    <p>Build dynamic and responsive websites using Django (Python), HTML, CSS, and JavaScript tailored
+                        to your business goals.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Backend Development</h3>
+                    <p>Develop robust backend systems with Django, REST APIs, and secure database integration using
+                        PostgreSQL or MySQL.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Frontend Design</h3>
+                    <p>Create modern, mobile-friendly frontends using HTML5, CSS3, JavaScript, and responsive design
+                        techniques.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Database Design</h3>
+                    <p>Design and optimize relational databases, manage schemas, write efficient queries, and ensure
+                        data integrity.</p>
+                </div>
+                <div class="service-card">
+                    <h3>API Integration</h3>
+                    <p>Integrate third-party APIs (like payment gateways or maps) and build custom RESTful APIs using
+                        Django Rest Framework (DRF).</p>
+                </div>
+                <div class="service-card">
+                    <h3>Deployment & Hosting</h3>
+                    <p>Deploy Django applications to production using services like PythonAnywhere, or custom
+                        .</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pramesh Gurav. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#logo', {
+            strings: ['Pramesh Gurav'],
+            typeSpeed: 100,
+            loop: true
+        });
+    </script>
+</body>
+</html>

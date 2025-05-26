@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pramesh - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(61, 45, 74);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+            background-color: rgb(93, 38, 112);
+            position: relative;
+        }
+
+        /* Logo styling */
+        nav .left span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Menu items */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #eb6eebf5;
+            font-size: 1.04rem;
+        }
+
+        /* Hamburger icon */
+        nav::after {
+            content: '☰';
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            right: 30px;
+        }
+
+        /* Responsive menu */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(93, 38, 112);
+                position: absolute;
+                top: 85px;
+                right: 0;
+                width: 100%;
+                padding: 20px 0;
+                z-index: 1000;
+            }
+
+            nav.show ul {
+                display: flex;
+            }
+
+            nav::after {
+                display: block;
+            }
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        /* Section First */
+
+        main hr {
+            border: 0;
+            background: #ffffff;
+            height: 1.4px;
+            margin: 40px 84px;
+        }
+
+
+        /* General Styles for Section */
+        .section-projects {
+            background-color: #f8f9fa;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        .project-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card-header {
+            height: 150px;
+            background-color: #e9ecef;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #5a2d82;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 0.95rem;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .btn-primary {
+            background-color: #5a2d82;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #452169;
+        }
+
+        /* footer */
+
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+            background-color: rgb(93, 38, 112);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Navbar -->
+    <header>
+        <nav>
+            <div class="left"><strong><span id="logo"></span></strong></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/templates/about.html">About</a></li>
+                    <li><a href="/templates/services.html">Services</a></li>
+                    <li><a href="/templates/projects.html">Projects</a></li>
+                    <li><a href="/templates/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="section-projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <a href="#" class="card-link">
+                        <div class="card-header">
+                            <!-- Optional: Add an image or icon -->
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">My Portfolio</h5>
+                            <p class="card-text">Developed using HTML, CSS, and JavaScript to showcase my web
+                                development skills.</p>
+                            <button class="btn-primary">View Project</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#" class="card-link">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Chemistry Lab Management</h5>
+                            <p class="card-text">SQL based database system to manage chemicals and lab
+                                equipment.</p>
+                            <button class="btn-primary">View Project</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#" class="card-link">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Library Management</h5>
+                            <p class="card-text">Librabry Management system to manage books issuance and returned as
+                                well as addition of new books.</p>
+                            <button class="btn-primary">View Project</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#" class="card-link">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Nexus E-commerce</h5>
+                            <p class="card-text">Full stack E-Commerce site using Django, cart system, and PayPal
+                                integration.</p>
+                            <button class="btn-primary">View Project</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Pramesh Gurav. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#logo', {
+            strings: ['Pramesh Gurav'],
+            typeSpeed: 100,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
